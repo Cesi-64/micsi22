@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 
-app.get('/', (req, res) => res.send('And now .... nothing !'))
+app.get('/', (req, res) => res.send('Il fait beau !'))
 
 app.all('*', (req, res) => res.status(500).send('You are so bad man'))
 
